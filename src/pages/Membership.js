@@ -2,12 +2,12 @@ import React from "react";
 import SEO from "../components/SEO";
 import Header from "../partials/header/Header";
 import Breadcrumb from "../container/Breadcrumb/Breadcrumb";
-import WorkContainer from "../container/Work/WorkContainer";
-import CallToAction from "../container/CallToAction/CallToAction";
+// import WorkContainer from "../container/Work/WorkContainer";
+// import CallToAction from "../container/CallToAction/CallToAction";
 import AboutFive from "../container/About/AboutFive";
-import BrandContainer from "../container/Brand/BrandContainer";
 import Faq from "../container/Faq/Faq";
 import Footer from "../container/Footer/Footer";
+import ServiceIconBox from "../container/service/ServiceIconBox";
 import ScrollToTop from "../components/ScrollToTop.jsx";
 
 const Membership = () => {
@@ -21,10 +21,10 @@ const Membership = () => {
 				content="Home"
 				contentTwo="Membership"
 			/>
-			<WorkContainer />
-			<CallToAction />
+            <ServiceIconBox classOption="bg-color-1" />
+			{/* <WorkContainer /> */}
+			{/* <CallToAction /> */}
 			<AboutFive />
-			<BrandContainer classOption="section-padding-bottom" />
 			<Faq />
 			<Footer />
 			<ScrollToTop />

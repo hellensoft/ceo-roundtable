@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AOS from "aos";
 import NavScrollTop from "./components/NavScrollTop";
 import HomeOne from "./pages/HomeOne";
-// import HomeTwo from "./pages/HomeTwo";
+import HomeTwo from "./pages/HomeTwo";
 // import HomeThree from "./pages/HomeThree";
 import About from "./pages/About";
 import Service from "./pages/Service";
@@ -14,7 +14,7 @@ import Membership from "./pages/Membership";
 // import BlogDetails from "./pages/BlogDetails";
 // import BlogCategories from "./pages/BlogCategories";
 // import BlogTag from "./pages/BlogTag";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Contact";  
 
 // CSS File Here
 import "aos/dist/aos.css";
@@ -40,9 +40,9 @@ function App() {
 						exact
 						component={HomeOne}
 					/>
-					{/* <Route path="/home-one" exact component={HomeOne}/>
+					{/* <Route path="/home-one" exact component={HomeOne}/> */}
               <Route path="/home-two" component={HomeTwo}/>
-              <Route path="/home-three" component={HomeThree}/> */}
+              {/* <Route path="/home-three" component={HomeThree}/> */}
 					<Route
 						path="/about"
 						component={About}
