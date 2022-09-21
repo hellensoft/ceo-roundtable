@@ -25,7 +25,7 @@ const BlogDetailsContainer = ({data}) => {
                             <div className="entry-author">
                                 <div className="author-info">
                                     <div className="author-avatar">
-                                        <img src={process.env.PUBLIC_URL + "/images/author/blog-author.png"} alt="" />
+                                        <img src={"/images/author/blog-author.png"} alt="" />
                                     </div>
                                     <div className="author-description">
                                         <h6 className="author-name">Eloise Smith</h6>
@@ -42,8 +42,8 @@ const BlogDetailsContainer = ({data}) => {
                                 <div className="nav-list">
                                     <div className="nav-item prev">
                                         <div className="inner">
-                                            <Link to={process.env.PUBLIC_URL + `/blog-details/${data.id}`}>
-                                                <div className="hover-bg has-thumbnail" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/pagination/blog-pagination.jpg)`}}></div>
+                                            <Link to={`/blog-details/${data.id}`}>
+                                                <div className="hover-bg has-thumbnail" style={{backgroundImage: `url(/images/pagination/blog-pagination.jpg)`}}></div>
                                                 <span className="cate">Marketing</span>
                                                 <h6>Eleven top tips for developing agile marketing strategies that work</h6>
                                             </Link>
@@ -52,8 +52,8 @@ const BlogDetailsContainer = ({data}) => {
 
                                     <div className="nav-item next">
                                         <div className="inner">
-                                            <Link to={process.env.PUBLIC_URL + `/blog-details/${data.id}`}>
-                                                <div className="hover-bg has-thumbnail" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/pagination/blog-pagination-2.jpg)`}}></div>
+                                            <Link to={`/blog-details/${data.id}`}>
+                                                <div className="hover-bg has-thumbnail" style={{backgroundImage: `url(/images/pagination/blog-pagination-2.jpg)`}}></div>
                                                 <span className="cate">Startup</span>
                                                 <h6>Growing a startup involves balancing out the financial stack</h6>
                                             </Link>

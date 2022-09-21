@@ -16,7 +16,7 @@ const CallToAction = () => {
 
     }, [])
     return (
-        <div className="section section-bg-image section-padding-t110-b120 newsletter-section overlay-two" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/newsletter.jpg)`}}>
+        <div className="section section-bg-image section-padding-t110-b120 newsletter-section overlay-two" style={{backgroundImage: `url(/images/bg/newsletter.jpg)`}}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-12 m-auto">
@@ -27,7 +27,7 @@ const CallToAction = () => {
                                 subTitle="Ready to start your project? The contact information collected through
                                 this form will only be used to send a response to your inquiry."
                             />
-                            <Link to={process.env.PUBLIC_URL + "/"} className="btn btn-primary btn-hover-secondary mt-6" data-aos="fade-up" data-aos-delay="300">Get Started</Link>
+                            <Link to={"/"} className="btn btn-primary btn-hover-secondary mt-6" data-aos="fade-up" data-aos-delay="300">Get Started</Link>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ const CallToAction = () => {
 
             <div className="shape shape-1" id="scene" ref={sceneEl}>
                 <span data-depth="1">
-                    <img src={process.env.PUBLIC_URL + '/images/shape-animation/newsletter-shape.png'} alt="" />
+                    <img src={'/images/shape-animation/newsletter-shape.png'} alt="" />
                 </span>
             </div>
         </div>

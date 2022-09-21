@@ -55,7 +55,7 @@ const ContactInformationTwo = () => {
 
                             <div className="shape shape-1" id="scene" ref={sceneEl}>
                                 <span data-depth="1">
-                                    <img src={process.env.PUBLIC_URL + "/images/shape-animation/contact-shape.png"} alt="" />
+                                    <img src={"/images/shape-animation/contact-shape.png"} alt="" />
                                 </span>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ const ContactInformationTwo = () => {
 
             <div className="shape shape-1 scene">
                 <span data-depth="1">
-                    <img src={process.env.PUBLIC_URL + "/images/shape-animation/newsletter-shape.png"} alt="" />
+                    <img src={"/images/shape-animation/newsletter-shape.png"} alt="" />
                 </span>
             </div>
 

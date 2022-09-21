@@ -62,7 +62,7 @@ const WorkDetailsContainer = ({ data }) => {
                                         })}
 
                                         <div className="work-btn">
-                                            <Link className="btn btn-primary btn-hover-secondary" to={process.env.PUBLIC_URL + data.btn.link}>{data.btn.text}</Link>
+                                            <Link className="btn btn-primary btn-hover-secondary" to={data.btn.link}>{data.btn.text}</Link>
                                         </div>
 
                                     </div>
@@ -75,7 +75,7 @@ const WorkDetailsContainer = ({ data }) => {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="custom-column-thumbnail mt-lg-14 mt-1" data-aos="fade-up">
-                            <img className="w-100" src={`${process.env.PUBLIC_URL}/${data.largeImage}`} alt="Agency" />
+                            <img className="w-100" src={`/${data.largeImage}`} alt="Agency" />
                         </div>
                     </div>
                 </div>
@@ -99,18 +99,18 @@ const WorkDetailsContainer = ({ data }) => {
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="thumbnail" data-aos="fade-up">
-                                <img className="w-100" src={`${process.env.PUBLIC_URL}/${data.gallery.imageOne}`} alt="Agency" />
+                                <img className="w-100" src={`/${data.gallery.imageOne}`} alt="Agency" />
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6 col-12 mt-lg-0 mt-md-0 mt-10">
                             <div className="thumbnail" data-aos="fade-up">
-                                <img className="w-100" src={`${process.env.PUBLIC_URL}/${data.gallery.imageTwo}`} alt="Agency" />
+                                <img className="w-100" src={`/${data.gallery.imageTwo}`} alt="Agency" />
                             </div>
                         </div>
 
                         <div className="col-lg-12 my-6">
                             <div className="thumbnail" data-aos="fade-up">
-                                <img className="w-100" src={`${process.env.PUBLIC_URL}/${data.gallery.imageThree}`} alt="Agency" />
+                                <img className="w-100" src={`/${data.gallery.imageThree}`} alt="Agency" />
                             </div>
                         </div>
                     </div>

@@ -3,9 +3,8 @@ import React from 'react';
 import {Link} from "react-router-dom";
 
 const Breadcrumb = ({title, content, contentTwo, image}) => {
-    const publicUrl = process.env.PUBLIC_URL;
     return (
-        <div className="page-title-section section section-padding-top overlay-two" style={{backgroundImage: `url(${publicUrl}/${image})`}}>
+        <div className="page-title-section section section-padding-top overlay-two" style={{backgroundImage: `url(/${image})`}}>
             <div className="page-title">
                 <div className="container">
                     <h1 className="title">{title}</h1>
@@ -14,7 +13,7 @@ const Breadcrumb = ({title, content, contentTwo, image}) => {
             <div className="page-breadcrumb position-static">
                 <div className="container">
                     <ul className="breadcrumb justify-content-center">
-                        <li><Link to={process.env.PUBLIC_URL + "/"}>{content}</Link></li>
+                        <li><Link to={"/"}>{content}</Link></li>
                         <li className="current">{contentTwo}</li>
                     </ul>
                 </div>

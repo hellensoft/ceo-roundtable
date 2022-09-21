@@ -39,7 +39,7 @@ const ServiceIconBoxTwo = ({ classOption }) => {
                     })}
 
                     <div className="shape shape-1" id="scene" ref={sceneEl}>
-                        <span data-depth="1"><img src={process.env.PUBLIC_URL + "/images/shape-animation/video-shape-1.png"} alt="" /></span>
+                        <span data-depth="1"><img src={"/images/shape-animation/video-shape-1.png"} alt="" /></span>
                     </div>
 
                 </div>

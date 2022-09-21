@@ -1,23 +1,11 @@
 import PropTypes from "prop-types";
-import {useEffect, useRef} from "react";
 import contactData from '../../data/contactInfo/contactInfo.json';
 import SectionTitle from '../../components/SectionTitles/SectionTitle';
 import ContactInfoItem from '../../components/ContactInfo/ContactInfoItem.jsx';
-import Parallax from 'parallax-js';
 
 
 const ContactInformation = ({ classOption }) => {
-    const sceneEl = useRef(null);
-    useEffect(() => {
-        const parallaxInstance = new Parallax(sceneEl.current, {
-        relativeInput: true,
-        })
-        
-        parallaxInstance.enable();
-
-        return () => parallaxInstance.disable();
-
-    }, [])
+    
     return (
         <div className={`section section-padding-t90-b100 ${classOption}`}>
             <div className="container shape-animate">
@@ -36,10 +24,6 @@ const ContactInformation = ({ classOption }) => {
                             </div>
                         ); 
                     })}
-                </div>
-
-                <div className="shape shape-1" id="scene" ref={sceneEl}>
-                    <span data-depth="1"><img src={process.env.PUBLIC_URL + "images/shape-animation/video-shape-1.png"} alt="shape" /></span>
                 </div>
 
             </div>

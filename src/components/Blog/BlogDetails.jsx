@@ -6,14 +6,14 @@ import {Link} from "react-router-dom";
 const BlogDetails = ({ data }) => {
     const cate = data.categories.map((value, i) => {
         return (
-            <Link to={process.env.PUBLIC_URL + `/category/${slugify(value)}`} key={i}>{value}{i !== data.categories.length - 1 && ","}</Link>
+            <Link to={`/category/${slugify(value)}`} key={i}>{value}{i !== data.categories.length - 1 && ","}</Link>
         )
         
     });
     return (
         <div className="blog-3 blog-details col" data-aos="fade-up">
             <div className="thumbnail">
-                <img className="w-100" src={`${process.env.PUBLIC_URL}/${data.largeImage}`} alt="Blog Image" />
+                <img className="w-100" src={`/${data.largeImage}`} alt="Blog Image" />
             </div>
             <div className="info">
                 <h3 className="title">{data.title}</h3>
@@ -27,7 +27,7 @@ const BlogDetails = ({ data }) => {
                     <li><i className="far fa-calendar"></i>{data.date}</li>
                     <li><i className="fas fa-tags"></i>{cate}</li>
                     <li><i className="fas fa-comments"></i>4 Comments</li>
-                    <li className="media"><Link to={process.env.PUBLIC_URL + "/"}><i className="fas fa-share-alt"></i>Share this post</Link>
+                    <li className="media"><Link to={"/"}><i className="fas fa-share-alt"></i>Share this post</Link>
                         <div className="list">
                             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
                             <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>

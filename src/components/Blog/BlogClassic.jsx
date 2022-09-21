@@ -7,14 +7,14 @@ import {Link} from "react-router-dom";
 const BlogClassic = ({ data }) => {
     const cate = data.categories.map((value, i) => {
         return (
-            <Link to={process.env.PUBLIC_URL + `/category/${slugify(value)}`} key={i}>{value}{i !== data.categories.length - 1 && ","}</Link>
+            <Link to={`/category/${slugify(value)}`} key={i}>{value}{i !== data.categories.length - 1 && ","}</Link>
         )
     });
     
     return (
         <div className="blog-3 col">
             <div className="thumbnail">
-                <Link to={process.env.PUBLIC_URL + `/blog-details/${data.id}`} className="image"><img src={`${process.env.PUBLIC_URL}/${data.largeImage}`} alt="Blog Image" /></Link>
+                <Link to={`/blog-details/${data.id}`} className="image"><img src={`/${data.largeImage}`} alt="Blog Image" /></Link>
             </div>
             <div className="info">
                 <ul className="meta">
@@ -23,11 +23,11 @@ const BlogClassic = ({ data }) => {
                     <li><i className="fas fa-tags"></i>{cate}</li>
                     <li><i className="fas fa-comments"></i>4 Comments</li>
                 </ul>
-                <h3 className="title"><Link to={process.env.PUBLIC_URL + `/blog-details/${data.id}`}>{data.title}</Link></h3>
+                <h3 className="title"><Link to={`/blog-details/${data.id}`}>{data.title}</Link></h3>
                 <div className="desc">
                     <p>{data.excerpt}</p>
                 </div>
-                <Link to={process.env.PUBLIC_URL + `/blog-details/${data.id}`} className="btn btn-primary btn-hover-secondary mt-6">Read More</Link>
+                <Link to={`/blog-details/${data.id}`} className="btn btn-primary btn-hover-secondary mt-6">Read More</Link>
             </div>
         </div>
     )

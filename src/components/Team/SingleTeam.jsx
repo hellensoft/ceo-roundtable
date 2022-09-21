@@ -5,7 +5,7 @@ const SingleTeam = ({ data }) => {
     return (
         <div className="team">
             <div className="thumb">
-                <img src={process.env.PUBLIC_URL + data.image} alt="team Images" />
+                <img src={`/${data.image}`} alt="team Images" />
                 <div className="overlay"></div>
                 <ul className="social-icon text-center">
                     <li className="facebook"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/" className="link"><i className="fab fa-facebook"></i></a></li>

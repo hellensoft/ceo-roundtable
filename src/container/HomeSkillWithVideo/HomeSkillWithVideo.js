@@ -47,21 +47,21 @@ const HomeSkillWithVideo = () => {
                                     <div className="text">Get the desired certificate delivered at house</div>
                                 </li>
                             </ul>
-                            <Link to={process.env.PUBLIC_URL + "/"} className="btn btn-primary btn-hover-secondary"> Get started for free</Link>
+                            <Link to={"/"} className="btn btn-primary btn-hover-secondary"> Get started for free</Link>
                         </div>
                     </div>
 
                     <div className="offset-xl-1 col-xl-6 col-lg-6 col-12">
                         <div className="video-popup-area">
                             <div className="skill-video">
-                                <img className="image" src={process.env.PUBLIC_URL + "/images/video/skill-video.jpg"} alt="video popup" />
+                                <img className="image" src={"/images/video/skill-video.jpg"} alt="video popup" />
                                 <button className="icon" onClick={()=> setOpen(true)}><i className="fas fa-play"></i></button>
                                 <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="eS9Qm4AOOBY" onClose={() => setOpen(false)}/>
                             </div>
 
                             <div className="shape shape-1 scene">
                                 <span data-depth="1">
-                                    <img src={process.env.PUBLIC_URL + "/images/shape-animation/video-shape-1.png"} alt="" />
+                                    <img src={"/images/shape-animation/video-shape-1.png"} alt="" />
                                 </span>
                             </div>
                         </div>
