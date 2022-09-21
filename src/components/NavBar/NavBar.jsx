@@ -24,55 +24,44 @@ const NavBar = () => {
 					</span>
 					<ul className="sub-menu">
 						<li>
-							<NavLink
-								to={"/membership#open-forum"}
-							>
-								<span className="menu-text">Open Forum</span>
+							<NavLink to={"/membership"}>
+								<span className="menu-text">Membership</span>
 							</NavLink>
 						</li>
 						<li>
-							<NavLink
-								to={"/membership#peer-group"}
-							>
+							<NavLink to={"/membership-register"}>
 								<span className="menu-text">
-									Open Forum + Peer Group
+									Membership registration
 								</span>
 							</NavLink>
 						</li>
 					</ul>
 				</li>
 				<li className="has-children">
-					<NavLink to={"/work"}>
-						<span className="menu-text">Publications</span>
+					<NavLink to={"/service"}>
+						<span className="menu-text">Services</span>
 					</NavLink>
 					<span className="menu-toggle">
 						<i className="far fa-angle-down"></i>
 					</span>
 					<ul className="sub-menu">
 						<li>
-							<NavLink
-								to={`/work-details/1`}
-							>
-								<span className="menu-text">
-									Press Releases
-								</span>
+							<NavLink to={`/service#open-forum`}>
+								<span className="menu-text">Open Forum</span>
 							</NavLink>
 						</li>
 						<li>
-							<NavLink
-								to={`/work-details/1`}
-							>
+							<NavLink to={`/service#open-forum+peer-group`}>
 								<span className="menu-text">
-									Tanzania&apos;s Industriallization Journey
-									Book
+									Open forum and peer group
 								</span>
 							</NavLink>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<NavLink to={"/event"}>
-						<span className="menu-text">Events</span>
+					<NavLink to={"/work"}>
+						<span className="menu-text">Publications</span>
 					</NavLink>
 				</li>
 				<li>

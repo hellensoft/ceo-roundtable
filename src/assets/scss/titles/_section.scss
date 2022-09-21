@@ -112,13 +112,13 @@
 .section-title-two{
     position: relative;
     z-index: 99;
-    margin-bottom: 30px;
+    margin-top: 30px;
     // Responsive
     @media #{$desktop-device}{
-        margin-bottom: 30px;
+        margin-top: 30px;
     }
     @media #{$large-mobile}{
-        margin-bottom: 30px;
+        margin-top: 30px;
     }
     &.color-light{
         & .sub-title{
@@ -149,6 +149,15 @@
         }
     }
 
+    & .sub-title-new {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 400;
+        color: $body-color;
+        position: relative;
+        display: block;
+    }
+
     & .title {
         font-size: 32px;
         line-height: 42px;
@@ -160,7 +169,6 @@
     @media #{$desktop-device} {
         & .sub-title{
             font-size: 18px;
-            margin-bottom: 20px;
         }
         & .title {
             font-size: 30px;
@@ -169,7 +177,6 @@
     @media #{$tablet-device} {
         & .sub-title{
             font-size: 18px;
-            margin-bottom: 20px;
         }
         & .title {
             font-size: 38px;
@@ -178,7 +185,6 @@
     @media #{$large-mobile} {
         & .sub-title{
             font-size: 16px;
-            margin-bottom: 10px;
         }
         & .title {
             font-size: 28px;
@@ -188,7 +194,6 @@
     @media #{$extra-small-mobile} {
         & .sub-title{
             font-size: 16px;
-            padding-left: 65px;
             &::before{
                 width: 60px;
             }
