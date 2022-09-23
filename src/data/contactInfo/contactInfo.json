@@ -9,12 +9,12 @@
 		"id": "2",
 		"icon": "images/svg/linea/linea-basic-message-txt.svg",
 		"title": "Give Us A Call",
-		"info": "+255 717 109 362"
+		"info": "+255 717 109 362 <br/> <p>&nbsp;</p>"
 	},
 	{
 		"id": "3",
 		"icon": "images/svg/linea/linea-basic-mail-open-text.svg",
 		"title": "Help Desk",
-		"info": "info@tanzaniaroundtable.co.tz"
+		"info": "info@tanzaniaroundtable.co.tz <br/>  <p>&nbsp;</p>"
 	}
 ]

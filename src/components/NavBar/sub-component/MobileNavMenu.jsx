@@ -53,55 +53,22 @@ const MobileNavMenu = () => {
 					</span>
 					<ul className="sub-menu">
 						<li>
-							<NavLink
-								to={"/membership#open-forum"}
-							>
-								<span className="menu-text">Open Forum</span>
+							<NavLink to={"/membership"}>
+								<span className="menu-text">Membership</span>
 							</NavLink>
 						</li>
 						<li>
-							<NavLink
-								to={`/membership#peer-group`}
-							>
+							<NavLink to={`/register-member`}>
 								<span className="menu-text">
-									Open forum + peer group
+									Membership registration
 								</span>
 							</NavLink>
 						</li>
 					</ul>
 				</li>
-				<li className="has-children">
-					<NavLink to={"/work"}>
-						<span className="menu-text">Publications</span>
-					</NavLink>
-					<span className="menu-toggle" onClick={onClickHandler}>
-						<i className="far fa-angle-down"></i>
-					</span>
-					<ul className="sub-menu">
-						<li>
-							<NavLink to={"/blog-grid"}>
-								<span className="menu-text">Blog Grid</span>
-							</NavLink>
-						</li>
-						<li>
-							<NavLink
-								to={"/blog-classic"}
-							>
-								<span className="menu-text">Blog Classic</span>
-							</NavLink>
-						</li>
-						<li>
-							<NavLink
-								to={`/blog-details/1`}
-							>
-								<span className="menu-text">Blog Details</span>
-							</NavLink>
-						</li>
-					</ul>
-				</li>
 				<li>
-					<NavLink to={"/event"}>
-						<span className="menu-text">Events</span>
+					<NavLink to={"/publication"}>
+						<span className="menu-text">Publications</span>
 					</NavLink>
 				</li>
 				<li>

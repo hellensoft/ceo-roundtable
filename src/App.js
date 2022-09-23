@@ -6,10 +6,10 @@ import HomeOne from "./pages/HomeOne";
 import HomeTwo from "./pages/HomeTwo";
 // import HomeThree from "./pages/HomeThree";
 import About from "./pages/About";
-import Service from "./pages/Service";
+import RegisterMember from "./pages/RegisterMember";
 import Membership from "./pages/Membership";
 // import WorkDetails from "./pages/WorkDetails";
-import BlogGrid from "./pages/BlogGrid";
+import Publication from "./pages/Publication";
 // import BlogClassic from "./pages/BlogClassic";
 // import BlogDetails from "./pages/BlogDetails";
 // import BlogCategories from "./pages/BlogCategories";
@@ -40,10 +40,13 @@ function App() {
 					<Route path="/home-two" component={HomeTwo} />
 					{/* <Route path="/home-three" component={HomeThree}/> */}
 					<Route path="/about" component={About} />
-					<Route path="/service" component={Service} />
+					<Route
+						path="/register-member"
+						component={RegisterMember}
+					/>
 					<Route path="/membership" component={Membership} />
 					{/* <Route path="/work-details/:id" component ={WorkDetails} /> */}
-					<Route path="/work" component={BlogGrid} />
+					<Route path="/publication" component={Publication} />
 					{/* <Route path="/blog-classic" component ={BlogClassic} /> */}
 					{/* <Route path="/tag/:slug" component ={BlogTag} /> */}
 					{/* <Route path="/category/:slug"component ={BlogCategories} /> */}

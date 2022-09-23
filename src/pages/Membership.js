@@ -3,13 +3,13 @@ import SEO from "../components/SEO";
 import Header from "../partials/header/Header";
 import Breadcrumb from "../container/Breadcrumb/Breadcrumb";
 // import WorkContainer from "../container/Work/WorkContainer";
-import CallToAction from "../container/CallToAction/CallToAction";
 // import AboutFive from "../container/About/AboutFive";
 // import Faq from "../container/Faq/Faq";
 import Footer from "../container/Footer/Footer";
-import ServiceIconBox from "../container/service/ServiceIconBox";
 import ScrollToTop from "../components/ScrollToTop.jsx";
 import SelectionProcess from "../components/SelectionProcess/SelectionProcess";
+import CallToAction from "../container/CallToAction/CallToAction";
+import MembershipType from "../components/MembershipTypes/MembershipTypes";
 
 const Membership = () => {
 	return (
@@ -22,12 +22,12 @@ const Membership = () => {
 				content="Home"
 				contentTwo="Membership"
 			/>
-			<ServiceIconBox classOption="bg-color-1" />
+			<MembershipType />
 			<SelectionProcess />
 			{/* <WorkContainer /> */}
-			<CallToAction />
 			{/* <AboutFive /> */}
 			{/* <Faq /> */}
+			<CallToAction />
 			<Footer />
 			<ScrollToTop />
 		</React.Fragment>

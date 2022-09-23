@@ -41,9 +41,7 @@ const Header = () => {
 					<div className="container position-relative">
 						<div className="row justify-content-between align-items-center">
 							<div className="col-xl-2 col-auto order-0">
-								<Logo
-									image="images/logo/logo.png"
-								/>
+								<Logo image="images/ceo-roundtable-wht.svg" />
 							</div>
 							<div className="col-auto col-xl d-flex align-items-center justify-content-end order-2 order-xl-1">
 								<div className="menu-column-area d-none d-xl-block position-static">

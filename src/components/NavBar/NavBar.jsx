@@ -29,7 +29,7 @@ const NavBar = () => {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to={"/membership-register"}>
+							<NavLink to={"/register-member"}>
 								<span className="menu-text">
 									Membership registration
 								</span>
@@ -37,30 +37,8 @@ const NavBar = () => {
 						</li>
 					</ul>
 				</li>
-				<li className="has-children">
-					<NavLink to={"/service"}>
-						<span className="menu-text">Services</span>
-					</NavLink>
-					<span className="menu-toggle">
-						<i className="far fa-angle-down"></i>
-					</span>
-					<ul className="sub-menu">
-						<li>
-							<NavLink to={`/service#open-forum`}>
-								<span className="menu-text">Open Forum</span>
-							</NavLink>
-						</li>
-						<li>
-							<NavLink to={`/service#open-forum+peer-group`}>
-								<span className="menu-text">
-									Open forum and peer group
-								</span>
-							</NavLink>
-						</li>
-					</ul>
-				</li>
 				<li>
-					<NavLink to={"/work"}>
+					<NavLink to={"/publication"}>
 						<span className="menu-text">Publications</span>
 					</NavLink>
 				</li>

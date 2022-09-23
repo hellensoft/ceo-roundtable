@@ -8,9 +8,6 @@ const Testimonial = ({ data }) => {
             <div className="testimonial-image">
                 <img src={`/${data.image}`} alt="" />
             </div>
-            <div className="testimonial-content">
-                <p>{data.desc}</p>
-            </div>
             <div className="author-info">
                 <div className="cite">
                     <h6 className="name">{data.name}</h6>

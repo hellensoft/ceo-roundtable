@@ -27,7 +27,7 @@ const HomeOne = () => {
 			{/* <Newsletter /> */}
 
 			{/* WHY JOIN US SECTION */}
-			<div className="video-section section section-padding">
+			<div className="video-section section section-padding" data-aos="fade-up">
 				<div className="container">
 					<div className="row align-items-center">
 						<div className="skill-with-video-content">

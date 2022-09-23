@@ -8,7 +8,7 @@ import Footer from '../container/Footer/Footer';
 import ScrollToTop from '../components/ScrollToTop.jsx';
 
 
-const BlogGrid = () => {
+const Publication = () => {
     return (
         <React.Fragment>
             <SEO title="Exomac || Blog" />
@@ -27,4 +27,4 @@ const BlogGrid = () => {
     )
 }
 
-export default BlogGrid;
+export default Publication;
