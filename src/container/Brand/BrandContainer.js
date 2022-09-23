@@ -15,22 +15,9 @@ const BrandContainer = ({ classOption }) => {
                             <div className="brand-list">
                             <Swiper className="brand-carousel"
                                 spaceBetween={30}
-                                slidesPerView={6}
+                                slidesPerView={4}
                                 loop
                                 breakpoints= {{
-                                    1200:{
-                                        slidesPerView : 6
-                                    },
-
-                                    992:{
-                                        slidesPerView : 5
-                                    },
-
-                                    768:{
-                                        slidesPerView : 5
-
-                                    },
-
                                     576:{
                                         slidesPerView : 4
                                     },
