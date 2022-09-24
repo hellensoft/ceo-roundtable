@@ -19,7 +19,7 @@ const ContactInformationThree = () => {
 
     }, [])
     return (
-        <div className="section section-padding contact-section overlay-two" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/contact-bg.jpg)`}}>
+        <div className="section section-padding contact-section overlay-two" style={{backgroundImage: `url(/images/bg/contact-bg.jpg)`}}>
 
             <div className="container">
                 <div className="row row-cols-lg-2 row-cols-1 align-items-center">
@@ -58,7 +58,7 @@ const ContactInformationThree = () => {
 
             <div className="shape shape-1" id="scene" ref={sceneEl}>
                 <span data-depth="1">
-                    <img src={process.env.PUBLIC_URL + "images/shape-animation/newsletter-shape.png"} alt="" />
+                    <img src={"images/shape-animation/newsletter-shape.png"} alt="" />
                 </span>
             </div>
 

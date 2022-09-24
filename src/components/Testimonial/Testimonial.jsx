@@ -6,10 +6,7 @@ const Testimonial = ({ data }) => {
     return (
         <div className="static-testimonial mb-6">
             <div className="testimonial-image">
-                <img src={process.env.PUBLIC_URL + data.image} alt="" />
-            </div>
-            <div className="testimonial-content">
-                <p>{data.desc}</p>
+                <img src={`/${data.image}`} alt="" />
             </div>
             <div className="author-info">
                 <div className="cite">

@@ -10,7 +10,7 @@ const SidebarPost = () => {
                     return(
                         <li key={value.id}>
                             <span className="cate">{value.categories.slice(0, 1)}</span>
-                            <Link to={process.env.PUBLIC_URL + `/blog-details/${value.id}`}>{value.title}</Link>
+                            <Link to={`/blog-details/${value.id}`}>{value.title}</Link>
                         </li>
                     )
                 })}

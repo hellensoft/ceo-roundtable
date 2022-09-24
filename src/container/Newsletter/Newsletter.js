@@ -16,7 +16,7 @@ const Newsletter = () => {
 
     }, [])
     return (
-        <div className="section section-bg-image section-padding-t110-b120 newsletter-section overlay-two" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/newsletter.jpg)`}}>
+        <div className="section section-bg-image section-padding-t110-b120 newsletter-section overlay-two" style={{backgroundImage: `url(/images/bg/newsletter.jpg)`}}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-12">
@@ -35,7 +35,7 @@ const Newsletter = () => {
 
             <div className="shape shape-1" id="scene" ref={sceneEl}>
                 <span data-depth="1">
-                    <img src={process.env.PUBLIC_URL + "/images/shape-animation/newsletter-shape.png"} alt="" />
+                    <img src={"/images/shape-animation/newsletter-shape.png"} alt="" />
                 </span>
             </div>
         </div>

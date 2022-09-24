@@ -1,5 +1,6 @@
 {
   "name": "exomac",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +10,8 @@
     "aos": "^2.3.4",
     "bootstrap": "^4.5.3",
     "disqus-react": "^1.0.11",
+    "formik": "^2.2.9",
+    "formik-file-and-image-input": "^0.0.6",
     "imagesloaded": "^4.1.4",
     "isotope-layout": "^3.0.6",
     "node-sass": "^4.14.1",
@@ -31,10 +34,11 @@
     "reactstrap": "^8.9.0",
     "swiper": "^6.4.5",
     "vivus": "^0.4.5",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
-    "start": "set PORT=3008 && react-scripts start",
+    "start": "set PORT=3000 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

@@ -29,7 +29,7 @@ const SidebarTag = () => {
             <div className="tagcloud">
                 {allTags.map((tag) => {
                     return(
-                        <Link key={tag.slug} to={process.env.PUBLIC_URL + `/tag/${tag.slug}`}>{tag.title}</Link>
+                        <Link key={tag.slug} to={`/tag/${tag.slug}`}>{tag.title}</Link>
                     )
                 })}
             </div>

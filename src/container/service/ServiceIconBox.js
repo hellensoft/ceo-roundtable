@@ -10,7 +10,7 @@ const ServiceIconBox = ({ classOption }) => {
             <div className="container">
 
                 <SectionTitle
-                    title="We create a unique action plan for brands"
+                    title="The Tanzanite CEO Round Table Structure"
                     subTitle="Get your company heading in the right direction with our digital
                     marketing strategist"
                 />

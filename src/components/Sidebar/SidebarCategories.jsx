@@ -33,7 +33,7 @@ const SidebarCategories = () => {
                 {categories.map(cat => {
                     return (
                         <li key={cat.slug}>
-                            <Link to={process.env.PUBLIC_URL + `/category/${cat.slug}`}>
+                            <Link to={`/category/${cat.slug}`}>
                                 <span className="text">{cat.title}</span> 
                                 <span className="count">{cat.count}</span>
                             </Link>

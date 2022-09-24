@@ -17,7 +17,7 @@ const Video = () => {
 
     }, [])
     return (
-        <div className="video-section section section-padding overlay-two" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg/video-bg.jpg)`}}>
+        <div className="video-section section section-padding overlay-two" style={{backgroundImage: `url(/images/bg/video-bg.jpg)`}}>
 
             <div className="container text-center">
 
@@ -36,7 +36,7 @@ const Video = () => {
 
             <div className="shape shape-1" id="scene" ref={sceneEl}>
                 <span data-depth="1">
-                    <img src={process.env.PUBLIC_URL + "images/shape-animation/newsletter-shape.png"} alt="" />
+                    <img src={"/images/shape-animation/newsletter-shape.png"} alt="" />
                 </span>
             </div>
 

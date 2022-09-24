@@ -80,16 +80,16 @@ const ServiceSkill = () => {
                         <div className="about-image-area right-0 skill-image-area">
                             <div className="about-image">
                                 <Tilt scale={scale} transitionSpeed={4000}>
-                                    <img src={process.env.PUBLIC_URL + "/images/skill/skill-1.jpg"} alt="" />
+                                    <img src={"/images/skill/skill-1.jpg"} alt="" />
                                 </Tilt>
                             </div>
                             <div className="about-image">
                                 <Tilt scale={scale} transitionSpeed={4000}>
-                                    <img src={process.env.PUBLIC_URL + "/images/skill/skill-2.jpg"} alt="" />
+                                    <img src={"/images/skill/skill-2.jpg"} alt="" />
                                 </Tilt>
                             </div>
                             <div className="shape shape-1" id="scene" ref={sceneEl}>
-                                <span data-depth="1"><img src={process.env.PUBLIC_URL + "/images/shape-animation/video-shape-1.png"} alt="" /></span>
+                                <span data-depth="1"><img src={"/images/shape-animation/video-shape-1.png"} alt="" /></span>
                             </div>
                         </div>
                     </div>
