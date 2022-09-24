@@ -6,7 +6,7 @@ import SectionTitleTwo from "../components/SectionTitles/SectionTitleTwo";
 import AboutFour from "../container/About/AboutFour";
 // import Video from '../container/Video/Video';
 import AboutFive from "../container/About/AboutFive";
-import TestimonialContainer from "../container/Testimonial/TestimonialContainer";
+// import TestimonialContainer from "../container/Testimonial/TestimonialContainer";
 // import CallToActionTwo from '../container/CallToAction/CallToActionTwo';
 import Footer from "../container/Footer/Footer";
 import ScrollToTop from "../components/ScrollToTop.jsx";
@@ -17,14 +17,14 @@ const AboutUs = () => {
 			<SEO title="CEO Roundtable || About" />
 			<Header />
 			<Breadcrumb
-				image="images/bg/breadcrumb-bg.jpg"
+				image="images/dar.jpeg"
 				title="About Us"
 				content="Home"
 				contentTwo="About Us"
 			/>
 			<AboutFour />
 			{/* <Video /> */}
-			<div className="section section-padding">
+			<div className="section section-padding bg-primary-blue">
 				<div className="container">
 					<div className="work-left work-details mt-6">
 						<div className="work-main-info">
@@ -55,6 +55,11 @@ const AboutUs = () => {
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+
+			<div className="section section-padding">
+				<div className="container">
 					<div className="row mt-lg-20 mt-12">
 						<div className="row">
 							<div
@@ -88,7 +93,10 @@ const AboutUs = () => {
 							</div>
 						</div>
 					</div>
-
+				</div>
+			</div>
+			<div className="section section-padding bg-primary-blue">
+				<div className="container">
 					<div className="row mt-lg-20 mt-12">
 						<div className="row">
 							<div
@@ -115,8 +123,13 @@ const AboutUs = () => {
 								data-aos-delay="300"
 							>
 								<img
-									style={{ width: "70%" }}
-									src={"/images/about/about-2.jpg"}
+									style={{
+										width: "70%",
+										height: "360px",
+										objectFit: "cover",
+										objectposition: "center",
+									}}
+									src={"/images/walking.jpeg"}
 									alt=""
 								/>
 							</div>
@@ -124,9 +137,8 @@ const AboutUs = () => {
 					</div>
 				</div>
 			</div>
-
 			<AboutFive />
-			<TestimonialContainer classOption="bg-primary-blue" />
+			{/* <TestimonialContainer classOption="bg-primary-blue" /> */}
 			{/* <CallToActionTwo /> */}
 			<Footer />
 			<ScrollToTop />

@@ -15,21 +15,22 @@ const validationSchema = yup.object().shape({
 	personalBio: yup.string().required("Please enter your personal bio"),
 });
 
-const Step1 = ({ step, setStep }) => {
+const Step1 = ({ step, setStep, data, setData }) => {
 	console.log(step);
 	return (
 		<Formik
+			data-aos="fade-up"
 			initialValues={{
-				prefix: "",
-				fullName: "",
-				email: "",
-				phoneNumber: "",
-				position: "",
-                personalBio: ''
+				prefix: data.prefix,
+				fullName: data.fullName,
+				email: data.email,
+				phoneNumber: data.phoneNumber,
+				position: data.position,
+				personalBio: data.personalBio,
 			}}
 			validationSchema={validationSchema}
 			onSubmit={(values) => {
-				console.log(values);
+				setData({ ...data, ...values });
 				setStep(2);
 			}}
 		>
@@ -39,6 +40,7 @@ const Step1 = ({ step, setStep }) => {
 					dangerouslySetInnerHTML={{ __html: "Personal Information" }}
 				></h2>
 				<div className="registration-form-element">
+					<label htmlFor="prefix">Prefix</label>
 					<Field as="select" name="prefix">
 						<option value="">Choose a Prefix</option>
 						<option value="Mr">Mr</option>
@@ -54,11 +56,8 @@ const Step1 = ({ step, setStep }) => {
 					</ErrorMessage>
 				</div>
 				<div className="registration-form-element">
-					<Field
-						name="fullName"
-						placeholder="Full Name"
-						type="text"
-					/>
+					<label htmlFor="fullName">Full Names</label>
+					<Field name="fullName" type="text" />
 					<ErrorMessage name="fullName">
 						{(error) => (
 							<p className="registration-form-error">{error}</p>
@@ -66,11 +65,8 @@ const Step1 = ({ step, setStep }) => {
 					</ErrorMessage>
 				</div>
 				<div className="registration-form-element">
-					<Field
-						name="email"
-						placeholder="Email Address"
-						type="email"
-					/>
+					<label htmlFor="email">Email Address</label>
+					<Field name="email" type="email" />
 					<ErrorMessage name="email">
 						{(error) => (
 							<p className="registration-form-error">{error}</p>
@@ -78,8 +74,8 @@ const Step1 = ({ step, setStep }) => {
 					</ErrorMessage>
 				</div>
 				<div className="registration-form-element">
-					{" "}
-					<Field name="position" placeholder="Position" type="text" />
+					<label htmlFor="phoneNumber">Position</label>
+					<Field name="position" type="text" />
 					<ErrorMessage name="position">
 						{(error) => (
 							<p className="registration-form-error">{error}</p>
@@ -87,12 +83,8 @@ const Step1 = ({ step, setStep }) => {
 					</ErrorMessage>
 				</div>
 				<div className="registration-form-element">
-					{" "}
-					<Field
-						name="phoneNumber"
-						placeholder="Phone number"
-						type="number"
-					/>
+					<label htmlFor="position">Phone number</label>
+					<Field name="phoneNumber" type="number" />
 					<ErrorMessage name="phoneNumber">
 						{(error) => (
 							<p className="registration-form-error">{error}</p>
@@ -100,13 +92,8 @@ const Step1 = ({ step, setStep }) => {
 					</ErrorMessage>
 				</div>
 				<div className="registration-form-element">
-					{" "}
-					<Field
-						name="personalBio"
-						placeholder="Physical Address"
-						as="textarea"
-						type="text"
-					/>
+					<label htmlFor="personalBio">Personal Bio</label>
+					<Field name="personalBio" as="textarea" type="text" />
 					<ErrorMessage name="personalBio">
 						{(error) => (
 							<p className="registration-form-error">{error}</p>
@@ -130,6 +117,8 @@ const Step1 = ({ step, setStep }) => {
 Step1.propTypes = {
 	step: PropTypes.number,
 	setStep: PropTypes.func,
+	data: PropTypes.object,
+	setData: PropTypes.func,
 };
 
 export default Step1;

@@ -35,7 +35,13 @@ const HomeAbout = () => {
 							<div className="about-image">
 								<Tilt scale={scale} transitionSpeed={4000}>
 									<img
-										src="/images/about/home-one-about/home_agency_about_1.jpg"
+										style={{
+											width: "360px",
+											height: "450px",
+											objectFit: "cover",
+											objectposition: "center",
+										}}
+										src="/images/briefcase.jpg"
 										alt=""
 									/>
 								</Tilt>
@@ -44,7 +50,13 @@ const HomeAbout = () => {
 							<div className="about-image">
 								<Tilt scale={scale} transitionSpeed={4000}>
 									<img
-										src="/images/about/home-one-about/home_agency_about_2.jpg"
+										style={{
+											width: "360px",
+											height: "450px",
+											objectFit: "cover",
+											objectposition: "center",
+										}}
+										src="/images/kufunga-vifungo.jpg"
 										alt=""
 									/>
 								</Tilt>

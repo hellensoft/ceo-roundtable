@@ -3,17 +3,17 @@
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 /* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
+input[type="number"] {
+	-moz-appearance: textfield;
 }
 
 input[type="file"] {
-    display: none;
+	display: none;
 }
 
 input[type="text"],
@@ -22,83 +22,84 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 input[type="number"],
-input[type="tel"], 
+input[type="tel"],
 select {
-    width: 100%;
-    min-height: 56px;
-    padding: 3px 20px;
+	width: 100%;
+	min-height: 56px;
+	padding: 3px 20px;
 
-    color: $body-color;
-    border: 1px solid #F5F5F5;
-    border-radius: 5px;
-    outline: none;
-    background-color: #fff;
+	color: $body-color;
+	border: 1px solid #f5f5f5;
+	border-radius: 5px;
+	outline: none;
+	background-color: #fff;
 
-@include placeholder {
-        color: #9F9F9F;
-    }
+	@include placeholder {
+		color: #9f9f9f;
+	}
 
-    &:focus {
-        border-color: $primary;
-        background-color: $white;
-    }
+	&:focus {
+		border-color: $primary;
+		background-color: $white;
+	}
 }
 
-textarea{
-    width: 100%;
-    min-height: 130px;
-    padding: 10px 20px;
+textarea {
+	width: 100%;
+	min-height: 130px;
+	padding: 10px 20px;
 
-    color: $body-color;
-    border: 1px solid #F5F5F5;
-    border-radius: 5px;
-    outline: none;
-    background-color: #fff;
+	color: $body-color;
+	border: 1px solid #f5f5f5;
+	border-radius: 5px;
+	outline: none;
+	background-color: #fff;
 
-    @include placeholder {
-        color: #9F9F9F;
-    }
+	@include placeholder {
+		color: #9f9f9f;
+	}
 
-    &:focus {
-        border-color: $primary;
-        background-color: $white;
-    }
+	&:focus {
+		border-color: $primary;
+		background-color: $white;
+	}
 }
 
-.single-input{
-    label{
-        color: $heading-color;
-    }
-    .description{
-        font-style: italic;
-        margin-top: 10px;
-        font-size: 14px;
-        line-height: 1.4;
-        margin-bottom: 0;
-    }
+.single-input {
+	label {
+		color: $heading-color;
+	}
+	.description {
+		font-style: italic;
+		margin-top: 10px;
+		font-size: 14px;
+		line-height: 1.4;
+		margin-bottom: 0;
+	}
 }
 
 .registration-form {
-    &-div {
-        max-width: 760px;
-    }
-    
-    &-element {
-        margin: 40px 0;
-    }
+	&-div {
+		max-width: 760px;
+		margin: 0 auto;
+	}
 
-    &-error {
-        margin-left: 10px;
-        color: $danger;
-    }
+	&-element {
+		margin: 40px 0;
+	}
 
-    &-buttons {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+	&-error {
+		margin-left: 10px;
+		color: $danger;
+	}
 
-        &__end {
-            justify-self: end;
-        }
-    }
+	&-buttons {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		&__end {
+			justify-self: end;
+		}
+	}
 }

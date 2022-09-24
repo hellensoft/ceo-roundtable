@@ -29,7 +29,7 @@ const CallToAction = () => {
 								subTitle="Membership to the CEO Roundtable is open to CEOs and Chairpersons of organizations operating significant business in Tanzania and is by invitation only."
 							/>
 							<Link
-								to={"/"}
+								to={"/register-member"}
 								className="btn btn-primary btn-hover-secondary mt-6"
 								data-aos="fade-up"
 								data-aos-delay="300"

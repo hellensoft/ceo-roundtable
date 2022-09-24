@@ -3,7 +3,7 @@
 .icon-box {
     position: relative;
     display: block;
-    height: 400px;
+    height: 430px;
 
     padding: 50px 60px;
 
@@ -79,7 +79,7 @@
             line-height: 1;
             display: inline-flex;
             align-items: center;
-            margin-top: 35px;
+            margin-top: 20px;
             color: $primary;
             // Responsive
             @media #{$desktop-device}{

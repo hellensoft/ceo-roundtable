@@ -7,7 +7,8 @@ import HomeTwo from "./pages/HomeTwo";
 // import HomeThree from "./pages/HomeThree";
 import About from "./pages/About";
 import RegisterMember from "./pages/RegisterMember";
-import Membership from "./pages/Membership";
+import OpenForum from "./pages/OpenForum";
+import OpenForumPeerGroup from "./pages/OpenForumPeerGroup";
 // import WorkDetails from "./pages/WorkDetails";
 import Publication from "./pages/Publication";
 // import BlogClassic from "./pages/BlogClassic";
@@ -40,11 +41,12 @@ function App() {
 					<Route path="/home-two" component={HomeTwo} />
 					{/* <Route path="/home-three" component={HomeThree}/> */}
 					<Route path="/about" component={About} />
+					<Route path="/register-member" component={RegisterMember} />
+					<Route path="/open-forum" component={OpenForum} />
 					<Route
-						path="/register-member"
-						component={RegisterMember}
+						path="/open-forum+peer-group"
+						component={OpenForumPeerGroup}
 					/>
-					<Route path="/membership" component={Membership} />
 					{/* <Route path="/work-details/:id" component ={WorkDetails} /> */}
 					<Route path="/publication" component={Publication} />
 					{/* <Route path="/blog-classic" component ={BlogClassic} /> */}
