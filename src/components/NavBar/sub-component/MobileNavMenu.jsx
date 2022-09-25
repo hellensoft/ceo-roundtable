@@ -45,7 +45,7 @@ const MobileNavMenu = () => {
 					</NavLink>
 				</li>
 				<li className="has-children">
-					<NavLink to={"/membership"}>
+					<NavLink to={"/register-member"}>
 						<span className="menu-text">Membership</span>
 					</NavLink>
 					<span className="menu-toggle" onClick={onClickHandler}>
@@ -53,14 +53,21 @@ const MobileNavMenu = () => {
 					</span>
 					<ul className="sub-menu">
 						<li>
-							<NavLink to={"/membership"}>
-								<span className="menu-text">Membership</span>
+							<NavLink to={"/open-forum"}>
+								<span className="menu-text">Open Forum</span>
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to={`/register-member`}>
+							<NavLink to={"/open-forum+peer-group"}>
 								<span className="menu-text">
-									Membership registration
+									Open Forum + Peer Group
+								</span>
+							</NavLink>
+						</li>
+						<li>
+							<NavLink to={"/register-member"}>
+								<span className="menu-text">
+									Become a Member
 								</span>
 							</NavLink>
 						</li>

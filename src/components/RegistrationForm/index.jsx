@@ -6,19 +6,66 @@ import Step3 from "./Steps/Step3";
 
 const RegistrationForm = () => {
 	const [step, setStep] = useState(1);
+	const [data, setData] = useState({
+		prefix: "",
+		fullName: "",
+		email: "",
+		phoneNumber: "",
+		position: "",
+		personalBio: "",
+		companyName: "",
+		companyRegistrationNumber: "",
+		TINnumber: "",
+		VRNnumber: "",
+		physicalAddress: "",
+		streetAddress: "",
+		city: "",
+		country: "",
+		poBox: "",
+		numberOfEmployees: "",
+		annualTurnover: "",
+		companySize: "",
+		sectors: "",
+		cv: null,
+		companyProfile: null,
+		companyLogo: null,
+		profilePhoto: null,
+		acknowledge: false,
+	});
 
 	const steps = [
 		{
 			id: 1,
-			component: <Step1 step={step} setStep={setStep} />,
+			component: (
+				<Step1
+					data={data}
+					setData={setData}
+					step={step}
+					setStep={setStep}
+				/>
+			),
 		},
 		{
 			id: 2,
-			component: <Step2 step={step} setStep={setStep} />,
+			component: (
+				<Step2
+					data={data}
+					setData={setData}
+					step={step}
+					setStep={setStep}
+				/>
+			),
 		},
 		{
 			id: 3,
-			component: <Step3 step={step} setStep={setStep} />,
+			component: (
+				<Step3
+					data={data}
+					setData={setData}
+					step={step}
+					setStep={setStep}
+				/>
+			),
 		},
 		// {
 		// 	id: 4,

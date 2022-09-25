@@ -101,7 +101,13 @@ const AboutFour = () => {
 							<div className="about-image js-tilt">
 								<Tilt scale={scale} transitionSpeed={4000}>
 									<img
-										src={"/images/about/about-1.jpg"}
+										style={{
+											width: "370px",
+											height: "400px",
+											objectFit: "cover",
+											objectposition: "center",
+										}}
+										src={"/images/explaining.jpeg"}
 										alt=""
 									/>
 								</Tilt>

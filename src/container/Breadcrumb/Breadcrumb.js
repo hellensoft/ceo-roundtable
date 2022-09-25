@@ -3,12 +3,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Breadcrumb = ({ title, content, contentTwo, image }) => {
+	console.log(image);
 	return (
 		<div
 			className="page-title-section section section-padding-top overlay-two"
 			style={{
-				backgroundImage: `url(/${image})`,
-				backgroundPosition: "top",
+				backgroundImage: "url(/images/dar.jpeg)",
+				backgroundPosition: "center",
 			}}
 		>
 			<div className="page-title">

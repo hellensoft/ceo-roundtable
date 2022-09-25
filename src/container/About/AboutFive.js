@@ -29,7 +29,13 @@ const AboutFive = () => {
 							<div className="about-image">
 								<Tilt scale={scale} transitionSpeed={4000}>
 									<img
-										src={"/images/about/about-3.jpg"}
+                                    style={{
+											width: "370px",
+											height: "400px",
+											objectFit: "cover",
+											objectposition: "center",
+										}}
+										src={"/images/holding.jpg"}
 										alt=""
 									/>
 								</Tilt>
@@ -37,7 +43,13 @@ const AboutFive = () => {
 							<div className="about-image">
 								<Tilt scale={scale} transitionSpeed={4000}>
 									<img
-										src={"/images/about/about-4.jpg"}
+                                    style={{
+											width: "370px",
+											height: "400px",
+											objectFit: "cover",
+											objectposition: "center",
+										}}
+										src={"/images/kufunga-vifungo.jpg"}
 										alt=""
 									/>
 								</Tilt>
@@ -71,7 +83,7 @@ const AboutFive = () => {
 								title="The roundtable will include CEOs from small businesses to large companies."
 							/>
 
-							<p>
+							<p style={{ textAlign: "justify" }}>
 								Based in Tanzania the Tanzanite CEO Roundtable
 								focuses on spreading its wings across Africa and
 								then go global starting with the China Chapter,
@@ -82,7 +94,7 @@ const AboutFive = () => {
 
 							<Link
 								className="btn btn-primary btn-hover-secondary mt-xl-12 mt-lg-8 mt-md-6 mt-4"
-								to={"/"}
+								to={"/register-member"}
 							>
 								Join Us
 							</Link>
