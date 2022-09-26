@@ -74,6 +74,11 @@ const MobileNavMenu = () => {
 					</ul>
 				</li>
 				<li>
+					<NavLink to={"/event"}>
+						<span className="menu-text">Events</span>
+					</NavLink>
+				</li>
+				<li>
 					<NavLink to={"/publication"}>
 						<span className="menu-text">Publications</span>
 					</NavLink>

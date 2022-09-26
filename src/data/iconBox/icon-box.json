@@ -6,8 +6,8 @@
 		"desc": "Get access to a variety of events moderated by professional coaches on diverse topics.",
 		"pageLink": "Learn More",
 		"price": "345,000",
-		"priceTag": "Tsh",
-		"link": "/membership#open-forum"
+		"priceTag": "TZS",
+		"link": "/open-forum"
 	},
 	{
 		"id": "2",
@@ -16,8 +16,8 @@
 		"desc": "A new and dynamic formula for the development of leaders from different business sectors",
 		"pageLink": "Learn More",
 		"price": "3,450,000",
-		"priceTag": "Tsh",
-		"link": "service"
+		"priceTag": "TZS",
+		"link": "/open-forum+peer-group"
 	},
 	{
 		"id": "3",
@@ -26,7 +26,7 @@
 		"desc": "Category members will benefit from other platform open forum and Open forum+Peer Group Plus Meeting with policy makers",
 		"pageLink": "Learn More",
 		"price": "22,000,000",
-		"priceTag": "Tsh",
-		"link": "service"
+		"priceTag": "TZS",
+		"link": "/open-forum+peer-group"
 	}
 ]

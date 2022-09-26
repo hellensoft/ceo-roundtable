@@ -16,7 +16,7 @@ const NavBar = () => {
 					</NavLink>
 				</li>
 				<li className="has-children">
-					<NavLink to={"/register-member"}>
+					<NavLink to={"#"}>
 						<span className="menu-text">Membership</span>
 					</NavLink>
 					<span className="menu-toggle">
@@ -43,6 +43,11 @@ const NavBar = () => {
 							</NavLink>
 						</li>
 					</ul>
+				</li>
+				<li>
+					<NavLink to={"/event"}>
+						<span className="menu-text">Events</span>
+					</NavLink>
 				</li>
 				<li>
 					<NavLink to={"/publication"}>
