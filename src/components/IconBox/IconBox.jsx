@@ -24,10 +24,10 @@ const IconBox = ({ data, classOption }) => {
 				</div>
 				<div className="mt-4">
 					<p>
-						<span className="sub-title">{data.priceTag}</span>
+						<sup className="sub-title">{data.priceTag}</sup>
 						<span
 							className="title ml-1"
-							style={{ fontSize: "20px", fontWeight: "bold" }}
+							style={{ fontSize: "30px", fontWeight: "bold" }}
 						>
 							{data.price}
 						</span>

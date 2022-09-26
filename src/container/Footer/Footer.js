@@ -5,7 +5,7 @@ const Footer = () => {
 		<div className="footer-section section footer-bg-color">
 			<div className="container">
 				<p className="copyright">
-					&copy; 2022 <strong>Tanzaniteceoroundtable</strong>. All
+					&copy; 2022 <strong>Tanzaniteceoroundtable</strong>, All
 					rights Reserved. Experienced by{" "}
 					<a
 						className="link"

@@ -15,13 +15,13 @@ const Publication = () => {
 
 	return (
 		<React.Fragment>
-			<SEO title="Exomac || Publication" />
+			<SEO title="Tanzanite roundtable || Publication" />
 			<Header />
 			<Breadcrumb
-				image="images/bg/breadcrumb-bg-four.jpg"
-				title="Find all our latest news, insights, and events"
+				image="images/dar.jpeg"
+				title="Publications"
 				content="Home"
-				contentTwo="Blog"
+				contentTwo="Publication"
 			/>
 			{/* <PageBlog /> */}
 			<div className="contact-form-section section section-padding-t90-b100 bg-primary-blue">

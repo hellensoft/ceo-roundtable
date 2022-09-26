@@ -21,6 +21,7 @@ import Contact from "./pages/Contact";
 import "aos/dist/aos.css";
 import "react-modal-video/scss/modal-video.scss";
 import "./assets/scss/style.scss";
+import Events from "./pages/Events";
 
 function App() {
 	useEffect(() => {
@@ -49,6 +50,7 @@ function App() {
 					/>
 					{/* <Route path="/work-details/:id" component ={WorkDetails} /> */}
 					<Route path="/publication" component={Publication} />
+					<Route path="/event" component={Events} />
 					{/* <Route path="/blog-classic" component ={BlogClassic} /> */}
 					{/* <Route path="/tag/:slug" component ={BlogTag} /> */}
 					{/* <Route path="/category/:slug"component ={BlogCategories} /> */}

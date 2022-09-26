@@ -4,231 +4,219 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
 
 const validationSchema = yup.object().shape({
-	cv: yup
-		.mixed()
-		.test("fileSize", "Maximum file size is 500 kb", function (value) {
-			if (!value) {
-				return true;
-			}
-			return value.size < 500000;
-		})
-		.required("Please upload your CV"),
-	companyProfile: yup
-		.mixed()
-		.test("fileSize", "Maximum file size is 500 kb", function (value) {
-			if (!value) {
-				return true;
-			}
-			return value.size < 500000;
-		})
-		.required("Please upload your company profile"),
-	companyLogo: yup
-		.mixed()
-		.test("fileSize", "Maximum file size is 500 kb", function (value) {
-			if (!value) {
-				return true;
-			}
-			return value.size < 500000;
-		})
-		.required("Please upload your company logo"),
-	profilePhoto: yup
-		.mixed()
-		.test("fileSize", "Maximum file size is 500 kb", function (value) {
-			if (!value) {
-				return true;
-			}
-			return value.size < 500000;
-		})
-		.required("Please upload your profile photo"),
-	// signedBrela: yup
-	// 	.mixed()
-	// 	.required("Please upload your signed brela document"),
+	companyName: yup.string().required("Please enter your company name"),
+	companyRegistrationNumber: yup
+		.string()
+		.required("Please enter your company registration number"),
+	TINnumber: yup.string().required("Please enter company's TIN number"),
+	VRNnumber: yup.string().required("Please enter company's VRN number"),
+	physicalAddress: yup
+		.string()
+		.required("Please enter company's physical address"),
+	streetAddress: yup
+		.string()
+		.required("Please enter company's street address"),
+	city: yup.string().required("Please enter company's city"),
+	country: yup.string().required("Please enter company's country"),
+	poBox: yup.string().required("Please enter company's p.o.box"),
+	numberOfEmployees: yup
+		.string()
+		.required("Please enter the company's number of employees"),
+	annualTurnover: yup
+		.string()
+		.required("Please enter company's annual turnover"),
+	companySize: yup
+		.string()
+		.required("Please enter choose company's company size"),
+	// sectors: yup.string().required("Please enter company's sectors"),
 });
 
 const Step3 = ({ step, setStep, data, setData }) => {
-	// const fileFormats = ["application/pdf"];
 	console.log(step);
 	return (
 		<Formik
 			data-aos="fade-up"
 			initialValues={{
-				cv: data.cv,
-				companyProfile: data.companyProfile,
-				companyLogo: data.companyLogo,
-				profilePhoto: data.profilePhoto,
-				acknowledge: data.acknowledge,
+				companyName: data.companyName,
+				companyRegistrationNumber: data.companyRegistrationNumber,
+				TINnumber: data.TINnumber,
+				VRNnumber: data.VRNnumber,
+				physicalAddress: data.physicalAddress,
+				streetAddress: data.streetAddress,
+				city: data.city,
+				country: data.country,
+				poBox: data.poBox,
+				numberOfEmployees: data.numberOfEmployees,
+				annualTurnover: data.annualTurnover,
+				companySize: data.companySize,
+				sectors: data.sectors,
 			}}
 			validationSchema={validationSchema}
 			onSubmit={(values) => {
 				setData({ ...data, ...values });
-				// setStep(4);
+				setStep(4);
 			}}
 		>
-			{({ setFieldValue, values }) => (
+			{({ values }) => (
 				<Form className="registration-form-div">
-					<div className="registration-form-buttons">
-						<h2
-							className={`title`}
-							dangerouslySetInnerHTML={{ __html: "Attachments" }}
-						/>
-						<p className="mr-20">Final</p>
+					<h2
+						className={`title`}
+						dangerouslySetInnerHTML={{ __html: "Company Details" }}
+					></h2>
+
+					<div className="registration-form-element">
+						<label htmlFor="companyName">Company Name</label>
+						<Field name="companyName" type="text" />
+						<ErrorMessage name="companyName">
+							{(error) => (
+								<p className="registration-form-error">
+									{error}
+								</p>
+							)}
+						</ErrorMessage>
 					</div>
 
-					{/* CV */}
 					<div className="registration-form-element">
-						<p
-							className={`title`}
-							dangerouslySetInnerHTML={{ __html: "CV" }}
-						/>
-						<div className="registration-file">
-							<label
-								htmlFor="cv"
-								className="btn btn-outline-primary"
-							>
-								Upload CV
-							</label>
-						</div>
-						{values.cv && <p>{values.cv.name}</p>}
-						<input
-							id="cv"
-							name="cv"
-							type="file"
-							onChange={(event) => {
-								setFieldValue(
-									"cv",
-									event.currentTarget.files[0]
-								);
-							}}
-						/>
-						<ErrorMessage name="cv">
-							{(error) => (
-								<p className="registration-form-error">
-									{error}
-								</p>
-							)}
-						</ErrorMessage>
-					</div>
-					{/* companyProfile */}
-					<div className="registration-form-element">
-						<p
-							className={`title`}
-							dangerouslySetInnerHTML={{
-								__html: "Company Profile",
-							}}
-						/>
-						<div className="registration-file">
-							<label
-								htmlFor="companyProfile"
-								className="btn btn-outline-primary"
-							>
-								Upload company profile
-							</label>
-						</div>
-						{values.companyProfile && (
-							<p>{values.companyProfile.name}</p>
-						)}
-						<input
-							id="companyProfile"
-							name="companyProfile"
-							type="file"
-							onChange={(event) => {
-								setFieldValue(
-									"companyProfile",
-									event.currentTarget.files[0]
-								);
-							}}
-						/>
-						<ErrorMessage name="companyProfile">
-							{(error) => (
-								<p className="registration-form-error">
-									{error}
-								</p>
-							)}
-						</ErrorMessage>
-					</div>
-					{/* companyLogo */}
-					<div className="registration-form-element">
-						<p
-							className={`title`}
-							dangerouslySetInnerHTML={{ __html: "Company Logo" }}
-						/>
-						<div className="registration-file">
-							<label
-								htmlFor="companyLogo"
-								className="btn btn-outline-primary"
-							>
-								Upload company logo
-							</label>
-						</div>
-						{values.companyLogo && <p>{values.companyLogo.name}</p>}
-						<input
-							id="companyLogo"
-							name="companyLogo"
-							type="file"
-							onChange={(event) => {
-								setFieldValue(
-									"companyLogo",
-									event.currentTarget.files[0]
-								);
-							}}
-						/>
-						<ErrorMessage name="companyLogo">
-							{(error) => (
-								<p className="registration-form-error">
-									{error}
-								</p>
-							)}
-						</ErrorMessage>
-					</div>
-					{/* profilePhoto */}
-					<div className="registration-form-element">
-						<p
-							className={`title`}
-							dangerouslySetInnerHTML={{
-								__html: "Profile photo",
-							}}
-						/>
-						<div className="registration-file">
-							<label
-								htmlFor="profilePhoto"
-								className="btn btn-outline-primary"
-							>
-								Upload profile photo
-							</label>
-						</div>
-						{values.profilePhoto && (
-							<p>{values.profilePhoto.name}</p>
-						)}
-						<input
-							id="profilePhoto"
-							name="profilePhoto"
-							type="file"
-							onChange={(event) => {
-								setFieldValue(
-									"profilePhoto",
-									event.currentTarget.files[0]
-								);
-							}}
-						/>
-						<ErrorMessage name="profilePhoto">
-							{(error) => (
-								<p className="registration-form-error">
-									{error}
-								</p>
-							)}
-						</ErrorMessage>
-					</div>
-					{/* acknowldge */}
-					<div className="registration-form-element">
-						<label>
-							<p>
-								<Field type="checkbox" name="acknowledge" />{" "}
-								&nbsp;I acknowledge that the information
-								provided is accurate and all the documents
-								attached are authentic.
-							</p>
+						<label htmlFor="companyRegistrationNumber">
+							Company Registration Number
 						</label>
-						<ErrorMessage name="profilePhoto">
+						<Field name="companyRegistrationNumber" type="number" />
+						<ErrorMessage name="companyRegistrationNumber">
+							{(error) => (
+								<p className="registration-form-error">
+									{error}
+								</p>
+							)}
+						</ErrorMessage>
+					</div>
+					{/* TINnumber */}
+					<div className="registration-form-element">
+						<label htmlFor="TINnumber">TIN Number</label>
+						<Field name="TINnumber" type="number" />
+						<ErrorMessage name="TINnumber">
+							{(error) => (
+								<p className="registration-form-error">
+									{error}
+								</p>
+							)}
+						</ErrorMessage>
+					</div>
+					{/* VRNnumber */}
+					<div className="registration-form-element">
+						<label htmlFor="VRNnumber">VRN Number</label>
+						<Field name="VRNnumber" type="number" />
+						<ErrorMessage name="VRNnumber">
+							{(error) => (
+								<p className="registration-form-error">
+									{error}
+								</p>
+							)}
+						</ErrorMessage>
+					</div>
+					{/* physicalAddress */}
+					<div className="registration-form-element">
+						<label htmlFor="physicalAddress">
+							Physical Address
+						</label>
+						<Field
+							name="physicalAddress"
+							as="textarea"
+							type="text"
+						/>
+						<ErrorMessage name="physicalAddress">
+							{(error) => (
+								<p className="registration-form-error">
+									{error}
+								</p>
+							)}
+						</ErrorMessage>
+					</div>
+					{/* streetAddress */}
+					<div className="registration-form-element">
+						<label htmlFor="streetAddress">Street 1</label>
+						<Field name="streetAddress" type="text" />
+						<ErrorMessage name="streetAddress">
+							{(error) => (
+								<p className="registration-form-error">
+									{error}
+								</p>
+							)}
+						</ErrorMessage>
+					</div>
+					{/* city */}
+					<div className="registration-form-element">
+						<label htmlFor="city">City</label>
+						<Field name="city" type="text" />
+						<ErrorMessage name="city">
+							{(error) => (
+								<p className="registration-form-error">
+									{error}
+								</p>
+							)}
+						</ErrorMessage>
+					</div>
+					{/* country */}
+					<div className="registration-form-element">
+						<label htmlFor="country">Country</label>
+						<Field name="country" type="text" />
+						<ErrorMessage name="country">
+							{(error) => (
+								<p className="registration-form-error">
+									{error}
+								</p>
+							)}
+						</ErrorMessage>
+					</div>
+					{/* poBox */}
+					<div className="registration-form-element">
+						<label htmlFor="poBox">P.O.Box</label>
+						<Field name="poBox" type="text" />
+						<ErrorMessage name="poBox">
+							{(error) => (
+								<p className="registration-form-error">
+									{error}
+								</p>
+							)}
+						</ErrorMessage>
+					</div>
+					{/* numberOfEmployees */}
+					<div className="registration-form-element">
+						<label htmlFor="numberOfEmployees">
+							Number of Employees
+						</label>
+						<Field name="numberOfEmployees" type="number" />
+						<ErrorMessage name="numberOfEmployees">
+							{(error) => (
+								<p className="registration-form-error">
+									{error}
+								</p>
+							)}
+						</ErrorMessage>
+					</div>
+
+					{/* annualTurnover */}
+					<div className="registration-form-element">
+						<label htmlFor="annualTurnover">Annual Turnover</label>
+						<Field name="annualTurnover" type="number" />
+						<ErrorMessage name="annualTurnover">
+							{(error) => (
+								<p className="registration-form-error">
+									{error}
+								</p>
+							)}
+						</ErrorMessage>
+					</div>
+
+					<div className="registration-form-element">
+						<label htmlFor="companySize">Company size</label>
+						<Field as="select" name="companySize">
+							<option value="">Choose your company size*</option>
+							<option value="SMEs">SMEs</option>
+							<option value="Large Corporation">
+								Large Corporation
+							</option>
+						</Field>
+						<ErrorMessage name="companySize">
 							{(error) => (
 								<p className="registration-form-error">
 									{error}
@@ -249,13 +237,10 @@ const Step3 = ({ step, setStep, data, setData }) => {
 							Previous
 						</button>
 						<button
-							className={`btn btn-primary btn-hover-secondary mt-6 registration-form-buttons__end ${
-								!values.acknowledge ? "disabled" : ""
-							}`}
+							className="btn btn-primary btn-hover-secondary mt-6 registration-form-buttons__end"
 							type="submit"
-							disabled={!values.acknowledge}
 						>
-							Submit
+							Next
 						</button>
 					</div>
 				</Form>
