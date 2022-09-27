@@ -13,7 +13,7 @@ import CallToAction from "../container/CallToAction/CallToAction";
 const OpenForum = () => {
 	return (
 		<React.Fragment>
-			<SEO title="CEO - Roundtable || Open Forum" />
+			<SEO title="Tanzanite roundtable || Open Forum" />
 			<Header />
 			<Breadcrumb
 				image="images/bg/breadcrumb-bg-two.jpg"

@@ -20,7 +20,7 @@ const BlogCategories = ({match: {params: {slug}}}) => {
     const categoryTitle = data[0].categories[0]
     return (
         <React.Fragment>
-            <SEO title="Exomac || Blog" />
+            <SEO title="Tanzanite roundtable || Blog" />
             <Header />
             <Breadcrumb 
                 image="images/bg/breadcrumb-bg-four.jpg"

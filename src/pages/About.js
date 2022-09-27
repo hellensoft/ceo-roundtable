@@ -14,7 +14,7 @@ import ScrollToTop from "../components/ScrollToTop.jsx";
 const AboutUs = () => {
 	return (
 		<React.Fragment>
-			<SEO title="CEO Roundtable || About" />
+			<SEO title="Tanzanite roundtable || About" />
 			<Header />
 			<Breadcrumb
 				image="images/dar.jpeg"
