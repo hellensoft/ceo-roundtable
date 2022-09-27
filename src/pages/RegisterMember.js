@@ -14,7 +14,7 @@ import RegistrationForm from "../components/RegistrationForm";
 const RegisterMember = () => {
 	return (
 		<React.Fragment>
-			<SEO title="CEO Roundtable || Service" />
+			<SEO title="Tanzanite roundtable || Service" />
 			<Header />
 			<Breadcrumb
 				image="images/bg/breadcrumb-bg-three.jpg"

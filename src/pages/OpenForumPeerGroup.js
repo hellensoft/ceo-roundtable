@@ -14,7 +14,7 @@ import MembershipType from "../components/MembershipTypes/MembershipTypes";
 const OpenForumPeerGroup = () => {
 	return (
 		<React.Fragment>
-			<SEO title="CEO - Roundtable || Open Forum + Peer Group" />
+			<SEO title="Tanzanite roundtable || Open Forum + Peer Group" />
 			<Header />
 			<Breadcrumb
 				image="images/bg/breadcrumb-bg-two.jpg"

@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 const HomeOne = () => {
 	return (
 		<React.Fragment>
-			<SEO title="CEO Roundtable of Tanzania - Ethical Leadeership for Growth" />
+			<SEO title="Tanzanite roundtable - Ethical Leadeership for Growth" />
 			<Header />
 			<IntroSlider />
 			<HomeAbout />
