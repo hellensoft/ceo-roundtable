@@ -31,6 +31,7 @@ const IconBox = ({ data, classOption }) => {
 						>
 							{data.price}
 						</span>
+                        <sup className="sub-title">/ annual</sup>
 					</p>
 				</div>
 				<Link to={data.link} className="link">
