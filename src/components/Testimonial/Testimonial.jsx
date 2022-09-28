@@ -12,6 +12,7 @@ const Testimonial = ({ data }) => {
                 <div className="cite">
                     <h6 className="name">{data.name}</h6>
                     <span className="position">{data.position}</span>
+                    <span className="">{data.description}</span>
                 </div>
             </div>
         </div>
