@@ -1,8 +1,23 @@
 [
 	{
+		"id": 2,
+		"image": "images/krishnan.jpg",
+		"name": "Mr. K V A Krishnan",
+		"position": "Our Chairman",
+		"description": "Tanzanite CEO Roundtable"
+	},
+	{
+		"id": 3,
+		"image": "images/last.jpg",
+		"name": "Violet Mordichai",
+		"position": "Vice  Chairwoman",
+		"description": "Tanzanite CEO Roundtable"
+	},
+	{
 		"id": 1,
 		"image": "images/deo-kiwale.jpg",
-		"name": "Deogratius Kiwale",
-		"position": "Chairman"
+		"name": "Deogratius Kilawe",
+		"position": "Managing Director",
+		"description": "Tanzanite CEO Roundtable"
 	}
 ]

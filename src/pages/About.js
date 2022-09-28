@@ -6,7 +6,7 @@ import SectionTitleTwo from "../components/SectionTitles/SectionTitleTwo";
 import AboutFour from "../container/About/AboutFour";
 // import Video from '../container/Video/Video';
 import AboutFive from "../container/About/AboutFive";
-// import TestimonialContainer from "../container/Testimonial/TestimonialContainer";
+import TestimonialContainer from "../container/Testimonial/TestimonialContainer";
 // import CallToActionTwo from '../container/CallToAction/CallToActionTwo';
 import Footer from "../container/Footer/Footer";
 import ScrollToTop from "../components/ScrollToTop.jsx";
@@ -138,7 +138,7 @@ const AboutUs = () => {
 				</div>
 			</div>
 			<AboutFive />
-			{/* <TestimonialContainer classOption="bg-primary-blue" /> */}
+			<TestimonialContainer classOption="bg-primary-blue" />
 			{/* <CallToActionTwo /> */}
 			<Footer />
 			<ScrollToTop />
