@@ -3,12 +3,12 @@ import React from "react";
 import TestimonialData from "../../data/testimonial/testimonial.json";
 import Testimonial from "../../components/Testimonial/Testimonial.jsx";
 import SectionTitle from "../../components/SectionTitles/SectionTitle";
-import SwiperCore, { Pagination } from "swiper";
+import SwiperCore, { Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
 import "swiper/components/pagination/pagination.scss";
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination, Autoplay]);
 
 const TestimonialContainer = ({ classOption }) => {
 	return (
