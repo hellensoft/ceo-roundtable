@@ -4,10 +4,8 @@ import Header from "../partials/header/Header";
 import Breadcrumb from "../container/Breadcrumb/Breadcrumb";
 import SectionTitleTwo from "../components/SectionTitles/SectionTitleTwo";
 import AboutFour from "../container/About/AboutFour";
-// import Video from '../container/Video/Video';
 import AboutFive from "../container/About/AboutFive";
 import TestimonialContainer from "../container/Testimonial/TestimonialContainer";
-// import CallToActionTwo from '../container/CallToAction/CallToActionTwo';
 import Footer from "../container/Footer/Footer";
 import ScrollToTop from "../components/ScrollToTop.jsx";
 
@@ -23,7 +21,6 @@ const AboutUs = () => {
 				contentTwo="About Us"
 			/>
 			<AboutFour />
-			{/* <Video /> */}
 			<div className="section section-padding bg-primary-blue">
 				<div className="container">
 					<div className="work-left work-details mt-6">
@@ -139,7 +136,6 @@ const AboutUs = () => {
 			</div>
 			<AboutFive />
 			<TestimonialContainer classOption="bg-primary-blue" />
-			{/* <CallToActionTwo /> */}
 			<Footer />
 			<ScrollToTop />
 		</React.Fragment>
