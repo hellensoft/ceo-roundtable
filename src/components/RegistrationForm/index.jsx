@@ -70,11 +70,7 @@ const RegistrationForm = () => {
 					setStep={setStep}
 				/>
 			),
-		},
-		// {
-		// 	id: 4,
-		// 	component: <Step4 step={step} setStep={setStep} />,
-		// },
+		}
 	];
 
 	return (

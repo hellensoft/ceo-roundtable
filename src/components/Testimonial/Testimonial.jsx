@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import React from 'react';
 
-
 const Testimonial = ({ data }) => {
     return (
         <div className="static-testimonial mb-6">

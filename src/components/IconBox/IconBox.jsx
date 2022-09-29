@@ -26,11 +26,12 @@ const IconBox = ({ data, classOption }) => {
 					<p>
 						<sup className="sub-title">{data.priceTag}</sup>
 						<span
-							className="title ml-1"
+							className="title ml-1 mr-1"
 							style={{ fontSize: "30px", fontWeight: "bold" }}
 						>
 							{data.price}
 						</span>
+                        <sup className="sub-title">/ annual</sup>
 					</p>
 				</div>
 				<Link to={data.link} className="link">

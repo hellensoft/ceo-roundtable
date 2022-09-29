@@ -14,7 +14,7 @@ const Contact = () => {
 			<SEO title="Tanzanite roundtable || Contact" />
 			<Header />
 			<Breadcrumb
-				image="images/bg/breadcrumb-bg-five.jpg"
+				image="images/dar.jpeg"
 				title="Contact Us"
 				content="Home"
 				contentTwo="Contact Us"
