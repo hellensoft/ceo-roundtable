@@ -28,7 +28,6 @@ const validationSchema = yup.object().shape({
 	companySize: yup
 		.string()
 		.required("Please enter choose company's company size"),
-	// sectors: yup.string().required("Please enter company's sectors"),
 });
 
 const Step3 = ({ step, setStep, data, setData }) => {

@@ -1,8 +1,6 @@
 import { Fragment, useState, useEffect } from "react";
 import Logo from "../../components/logo/Logo";
 import NavBar from "../../components/NavBar/NavBar";
-// import HeaderSearch from '../../components/HeaderSearch/HeaderSearch';
-// import Btn from '../../components/Btn/Btn';
 import MobileMenu from "../../components/NavBar/MobileMenu";
 import MainSearch from "../../components/NavBar/MainSearch";
 
@@ -47,19 +45,6 @@ const Header = () => {
 								<div className="menu-column-area d-none d-xl-block position-static">
 									<NavBar />
 								</div>
-								{/* <div className="header-search-area ml-xl-7 ml-0">
-
-                                    <HeaderSearch onClick={onSearchHandler}/>
-                                </div>
-
-                                <div className="header-mobile-menu-toggle d-xl-none ml-sm-2">
-                                    <button type="button" className="toggle" onClick={onCanvasHandler}>
-                                        <i className="icon-top"></i>
-                                        <i className="icon-middle"></i>
-                                        <i className="icon-bottom"></i>
-                                    </button>
-                                </div> */}
-
 								<div className="header-mobile-menu-toggle d-xl-none ml-sm-2">
 									<button
 										type="button"
@@ -72,10 +57,6 @@ const Header = () => {
 									</button>
 								</div>
 							</div>
-
-							{/* <div className="col-xl-2 col d-none d-sm-flex justify-content-end order-1 order-xl-2">
-                                <Btn name='Buy Now' />
-                            </div> */}
 						</div>
 					</div>
 				</div>

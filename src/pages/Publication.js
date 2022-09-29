@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import SEO from "../components/SEO";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
+import SEO from "../components/SEO";
 import Header from "../partials/header/Header";
 import Breadcrumb from "../container/Breadcrumb/Breadcrumb";
 import SectionTitle from "../components/SectionTitles/SectionTitle";
@@ -23,7 +23,6 @@ const Publication = () => {
 				content="Home"
 				contentTwo="Publication"
 			/>
-			{/* <PageBlog /> */}
 			<div className="contact-form-section section section-padding-t90-b100 bg-primary-blue">
 				<div className="container">
 					<div className="row">

@@ -40,13 +40,9 @@ const validationSchema = yup.object().shape({
 			return value.size < 500000;
 		})
 		.required("Please upload your profile photo"),
-	// signedBrela: yup
-	// 	.mixed()
-	// 	.required("Please upload your signed brela document"),
 });
 
 const Step4 = ({ step, setStep, data, setData }) => {
-	// const fileFormats = ["application/pdf"];
 	console.log(step);
 	return (
 		<Formik
@@ -61,7 +57,6 @@ const Step4 = ({ step, setStep, data, setData }) => {
 			validationSchema={validationSchema}
 			onSubmit={(values) => {
 				setData({ ...data, ...values });
-				// setStep(4);
 			}}
 		>
 			{({ setFieldValue, values }) => (
