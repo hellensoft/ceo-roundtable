@@ -1,0 +1,20 @@
+[
+	{
+		"id": "1",
+		"title": "Unlocking Opportunities",
+		"desc": "Networking with others at your level.",
+		"backgroundImage": "/images/hero-image/hero-2.jpg"
+	},
+	{
+		"id": "2",
+		"title": "Charting New Horizons",
+		"desc": "Exchanging new and innovative management ideas, solutions and strategies in a confidential setting.",
+		"backgroundImage": "/images/hero-image/hero-1.jpg"
+	},
+	{
+		"id": "3",
+		"title": "Building Partnerships",
+		"desc": "Gaining the collective wisdom and multiple perspectives on business and operational issues through open and unbiased discussions.",
+		"backgroundImage": "/images/hero-image/hero-3.jpg"
+	}
+]

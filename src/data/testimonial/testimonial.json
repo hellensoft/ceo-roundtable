@@ -1,0 +1,30 @@
+[
+	{
+		"id": 2,
+		"image": "images/krishnan.jpg",
+		"name": "Mr. K V A Krishnan",
+		"position": "Our Chairman",
+		"description": "Group MD: Alliance Insurance Corporation Ltd"
+	},
+	{
+		"id": 3,
+		"image": "images/last.jpg",
+		"name": "Violet Mordichai",
+		"position": "Vice  Chairwoman",
+		"description": "Director & Partner at Mony Industries"
+	},
+	{
+		"id": 1,
+		"image": "images/deo-kiwale.jpg",
+		"name": "Deogratius Kilawe",
+		"position": "Managing Director",
+		"description": "MD Easternstar Consulting Group Tanzania"
+	},
+	{
+		"id": 1,
+		"image": "images/tabia-massudi.webp",
+		"name": "Ms. Tabia Massudi",
+		"position": "Board Member",
+		"description": "General Manager - Assemble Insurance Tanzania"
+	}
+]

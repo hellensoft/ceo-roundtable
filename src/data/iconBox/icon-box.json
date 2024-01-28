@@ -1,0 +1,32 @@
+[
+	{
+		"id": "1",
+		"icon": "/images/imgs/noun-coworkers-1637687.svg",
+		"title": "Open Forum",
+		"desc": "Get access to a variety of events moderated by professional coaches on diverse topics.",
+		"pageLink": "Learn More",
+		"price": "2,000,000",
+		"priceTag": "TZS",
+		"link": "/open-forum"
+	},
+	{
+		"id": "2",
+		"icon": "/images/imgs/noun-forum-3320364.svg",
+		"title": "Open Forum + Peer Group",
+		"desc": "A new and dynamic formula for the development of leaders from different business sectors",
+		"pageLink": "Learn More",
+		"price": "3,450,000",
+		"priceTag": "TZS",
+		"link": "/open-forum+peer-group"
+	},
+	{
+		"id": "3",
+		"icon": "/images/imgs/VIP.svg",
+		"title": "VIP Membership",
+		"desc": "Category members will benefit from other platform open forum and Open forum+Peer Group Plus Meeting with policy makers",
+		"pageLink": "Learn More",
+		"price": "22,000,000",
+		"priceTag": "TZS",
+		"link": "/open-forum+peer-group"
+	}
+]

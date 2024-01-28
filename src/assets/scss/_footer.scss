@@ -1,0 +1,21 @@
+/*----------------------------------------*/
+/*  12. Footer CSS
+/*----------------------------------------*/
+
+.footer-bg-color{
+    background-color: #030e22;
+}
+
+.footer-section {
+    overflow: hidden;
+}
+
+.copyright {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    padding: 20px 15px;
+    border-top: 1px solid $gray-200;
+    color: $white;
+    margin-bottom: 0;
+}
